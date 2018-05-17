@@ -1,5 +1,15 @@
 "use strict";
 
+// create divs
+const app = document.querySelector("#app");
+
+const numberOfBubbles = 300;
+
+for( let i=0; i < numberOfBubbles; i++ ) {
+    const div = document.createElement("div");
+    app.appendChild(div);
+}
+
 const divs = document.querySelectorAll("#app div");
 
 divs.forEach(function(div){
